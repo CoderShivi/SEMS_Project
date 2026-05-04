@@ -96,6 +96,7 @@ entity Employees : cuid, managed {
 
     documents          : Composition of many Documents
                              on documents.employee = $self;
+                             
 
     notifications      : Composition of many Notifications
                              on notifications.employee = $self;
